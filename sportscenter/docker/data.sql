@@ -1,5 +1,5 @@
 -- -----------------------------------------------------
--- Schema full-stack-sportscenter
+-- Schema full-stack-sports-center
 -- -----------------------------------------------------
 CREATE DATABASE IF NOT EXISTS `sportscenter`;
 
