@@ -2,6 +2,7 @@ import { Container, CssBaseline, ThemeProvider, createTheme } from "@mui/materia
 import Catalog from "../../features/catalog/Catalog";
 import Header from "./Header";
 import { useState } from "react";
+import {Outlet} from "react-router-dom";
 
 function App() {
     const [darkMode, setDarkMode] = useState(false);
@@ -20,7 +21,7 @@ function App() {
             <CssBaseline/>
             <Header darkMode={darkMode} handleThemeChange={handleThemeChange}/>
             <Container sx={{ paddingTop: "64px" }}>
-                <Catalog/>
+                <Outlet/>
             </Container>
         </ThemeProvider>
     )
