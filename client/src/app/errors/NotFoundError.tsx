@@ -1,7 +1,7 @@
 import { Container, Paper, Box, Typography, Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 
-export default function NotFound(){
+export default function NotFoundError(){
     const navigate = useNavigate();
     const handleGoHome = () =>{
         navigate('/');

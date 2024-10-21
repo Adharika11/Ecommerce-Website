@@ -4,8 +4,8 @@ import HomePage from "../../features/home/HomePage";
 import Catalog from "../../features/catalog/Catalog";
 import ContactPage from "../../features/contact/ContactPage";
 import ProductDetails from "../../features/catalog/ProductDetails";
-import NotFound from "../errors/NotFoundError";
 import ServerError from "../errors/ServerError";
+import NotFoundError from "../errors/NotFoundError";
 
 export const router = createBrowserRouter([
     {
@@ -16,7 +16,7 @@ export const router = createBrowserRouter([
             {path:'store', element:<Catalog/>},
             {path:'store/:id', element:<ProductDetails/>},
             {path:'contact', element:<ContactPage/>},
-            {path:'not-found', element:<NotFound/>},
+            {path:'not-found', element:<NotFoundError/>},
             {path:'server-error', element:<ServerError/>},
             {path:'*', element:<Navigate replace to='/not-found'/>}
         ]
