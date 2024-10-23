@@ -12,11 +12,11 @@ import java.util.List;
 @NoArgsConstructor
 @RedisHash("Basket")
 public class Basket {
-       @Id
-        private String id;
-        private List<BasketItem> items = new ArrayList<>();
-        public Basket(String id) {
-            this.id = id;
-        }
+    public Basket(String id) {
+        this.id = id;
+    }
+    @Id
+    private String id;
+    private List<BasketItem> items = new ArrayList<>();
     }
 
